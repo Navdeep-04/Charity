@@ -1,0 +1,13 @@
+{
+  "routes": [
+    "/admin/dashboard",
+    "/donations",
+    "/forgot-password",
+    "/history",
+    "/home",
+    "/login",
+    "/ngo/create-donation",
+    "/ngo/dashboard",
+    "/signup"
+  ]
+}
