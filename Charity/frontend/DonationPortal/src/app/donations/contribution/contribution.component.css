@@ -1,0 +1,40 @@
+.page-wrapper{
+  padding-top: calc(var(--nav-h) + 1.5rem);
+  padding-bottom: 3rem;
+}
+
+/* Layout */
+.contribute-card{
+  background:#fff;
+  padding:1.8rem;
+  border-radius:1.5rem;
+  box-shadow:var(--shadow);
+  display:grid;
+  grid-template-columns:1fr 1.4fr;
+  gap:1.5rem;
+}
+
+/* Donation Summary */
+.summary-box{
+  background:#fafafa;
+  border:1px dashed #ddd;
+  padding:1.2rem;
+  border-radius:1rem;
+}
+
+/* Form */
+.contribute-card form{
+  display:flex;
+  flex-direction:column;
+  gap:.9rem;
+}
+.contribute-card input,
+.contribute-card textarea{
+  border:1px solid #ddd;
+  padding:.9rem;
+  border-radius:1rem;
+}
+.contribute-card button{
+  width:max-content;
+  align-self:flex-end;
+}

@@ -1,0 +1,111 @@
+<div class="auth-page">
+  <div class="auth-wrapper">
+    <form #signupForm="ngForm" novalidate (ngSubmit)="onSignup(signupForm)">
+
+      <div class="auth-card">
+        <h3>Create your account</h3>
+
+      <div class="field">
+        <label>Full Name</label>
+        <input
+          type="text"
+          name="fullName"
+          placeholder="Enter your name"
+          [(ngModel)]="formData.fullName"
+          #fullName="ngModel"
+          required
+        />
+        <span class="error-message" *ngIf="submitted && fullName.invalid">
+          Full Name is required*.
+        </span>
+      </div>
+
+      <div class="field">
+        <label>Select Role</label>
+        <select
+          name="role"
+          [(ngModel)]="formData.role"
+          #role="ngModel"
+          required
+        >
+          <option value="" disabled>Choose account role</option>
+          <option value="Donor">Donor</option>
+          <option value="NGO">NGO</option>
+          <option value="Admin">Admin</option>
+        </select>
+        <span class="error-message" *ngIf="submitted && role.invalid">
+          Role selection is required*.
+        </span>
+      </div>
+
+      <div class="field">
+        <label>Contact Info</label>
+        <input
+          type="text"
+          name="contactInfo"
+          placeholder="Phone / Address"
+          [(ngModel)]="formData.contactInfo"
+          #contactInfo="ngModel"
+          required
+        />
+        <span class="error-message" *ngIf="submitted && contactInfo.invalid">
+          Contact Info is required*.
+        </span>
+      </div>
+
+      <div class="field">
+        <label>Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="example@email.com"
+          [(ngModel)]="formData.email"
+          #email="ngModel"
+          required
+        />
+        <span class="error-message" *ngIf="submitted && email.invalid">
+          Email is required*.
+        </span>
+      </div>
+
+      <div class="field">
+        <label>Password</label>
+        <input
+          type="password"
+          autocomplete="new-password"
+          name="password"
+          placeholder="Password"
+          [(ngModel)]="formData.password"
+          #password="ngModel"
+          required
+          minlength="5"
+        />
+        <span class="error-message" *ngIf="submitted && password.errors?.['required']">
+          Password is required*.
+        </span>
+        <span class="error-message" *ngIf="submitted && password.errors?.['minlength']">
+          Password must be at least 5 characters long*.
+        </span>
+      </div>
+
+      <div class="field" *ngIf="loadingSubmit">
+        <div class="spinner-container">
+          <span class="loader"></span>
+        </div>
+      </div>
+
+      <div class="field">
+        <button type="submit" class="primary-btn" [disabled]="loadingSubmit || signupForm.invalid" [attr.aria-disabled]="loadingSubmit || signupForm.invalid">
+          {{ loadingSubmit ? 'Creating...' : 'Create Account' }}
+        </button>
+        <div class="server-error" *ngIf="errorMessage">{{ errorMessage }}</div>
+      </div>
+
+        <p class="alt-text">Already have an account? <a routerLink="/login">Login</a></p>
+      </div>
+
+    </form>
+  </div>
+
+  <p class="footer-text">Role-based access: Donor • NGO • Admin</p>
+</div>

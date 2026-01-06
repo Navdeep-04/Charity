@@ -1,0 +1,60 @@
+<div class="page-wrapper section">
+
+  <div class="section-header">
+    <h2>Confirm your <span class="highliter">contribution</span></h2>
+    <p>Schedule pickup & add optional notes</p>
+  </div>
+
+  <div *ngIf="!donation && !loading">Loading donation…</div>
+
+  <div
+    class="contribute-card contribute-layout"
+    *ngIf="donation">
+
+    <!-- Donation Summary -->
+    <div class="summary-box">
+      <h4>Selected Donation</h4>
+
+      <p><strong>{{ donation.donation_type }} — {{ donation.location }}</strong></p>
+
+      <p>
+        Requirement: {{ donation.quantity_or_amount }}
+        • Priority: {{ donation.priority }}
+      </p>
+
+      <p><b>Pickup:</b>
+        {{ donation.pickup_date_time | date:'MMM d, h:mm a' }}
+      </p>
+    </div>
+
+    <!-- Contribution Form -->
+    <form (ngSubmit)="submit()">
+
+      <input
+        type="number"
+        placeholder="Contribution Quantity / Amount"
+        [(ngModel)]="form.contribution_quantity"
+        name="quantity"
+        required />
+
+      <input
+        type="datetime-local"
+        [(ngModel)]="form.pickup_date_time"
+        name="pickup"
+        required />
+
+      <textarea
+        rows="5"
+        placeholder="Pickup notes (optional)"
+        [(ngModel)]="form.notes"
+        name="notes">
+      </textarea>
+
+      <button class="btn btn-lg" type="submit" [disabled]="loading">
+        {{ loading ? 'Submitting…' : 'Confirm Contribution' }}
+      </button>
+    </form>
+
+  </div>
+</div>
+

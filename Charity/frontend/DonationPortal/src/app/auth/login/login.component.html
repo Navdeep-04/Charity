@@ -1,0 +1,46 @@
+<div class="auth-page">
+  <div class="auth-wrapper">
+
+    <div class="brand-title"></div>
+
+    <form (ngSubmit)="onLogin()" novalidate>
+      <div class="auth-card">
+
+        <h3>Sign in to your account</h3>
+
+        <div class="field">
+          <label>Email</label>
+          <input type="email" name="email"
+                 [(ngModel)]="formData.email"
+                 placeholder="Enter your email" required />
+        </div>
+
+        <div class="field">
+          <label>Password</label>
+          <input type="password" name="password"
+                 [(ngModel)]="formData.password"
+                 placeholder="Enter password" required />
+        </div>
+
+        <a routerLink="/forgot-password" class="forgot-link">
+          Forgot your password?
+        </a>
+
+        <button class="primary-btn" type="submit" [disabled]="loading">
+          {{ loading ? 'Signing in…' : 'Continue' }}
+        </button>
+
+        <p class="alt-text">
+          Don’t have an account?
+          <a routerLink="/signup" class="link-button">Create one</a>
+        </p>
+
+      </div>
+    </form>
+
+    <p class="footer-note">
+      Role-based access: Donor • NGO • Admin
+    </p>
+
+  </div>
+</div>

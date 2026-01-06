@@ -1,0 +1,56 @@
+<div class="page-wrapper">
+
+  <div class="section-header">
+    <h2>Donation Requests</h2>
+    <p>Support causes around you</p>
+  </div>
+
+  <div *ngIf="loading">Loading donations…</div>
+
+  <div *ngIf="!loading && donations.length === 0">
+    No donation requests found.
+  </div>
+
+  <div class="donation-grid">
+
+    <div class="donation-card" *ngFor="let d of donations">
+
+      <img
+        [src]="d.images || '/assets/img/placeholder.jpg'"
+        alt="donation"
+      />
+
+      <div class="card-body">
+
+        <h3>{{ d.donation_type }} <span>({{ d.priority }})</span></h3>
+
+        <p><b>NGO:</b> {{ d.ngo_name }}</p>
+        <p><b>Location:</b> {{ d.location }}</p>
+        <p><b>Quantity / Amount:</b> {{ d.quantity_or_amount }}</p>
+        <p><b>Status:</b> {{ d.status }}</p>
+
+        <!-- Optional progress bar if data available -->
+        <div class="progress" *ngIf="d.contributed">
+          <span [style.--w.%]="progressPercent(d)"></span>
+        </div>
+
+        <!-- Donor action -->
+        <button
+          *ngIf="role === 'Donor'"
+          routerLink="/donations/{{ d.id }}"
+        >
+          View & Contribute
+        </button>
+
+        <!-- NGO action -->
+        <button
+          *ngIf="role === 'NGO'"
+          routerLink="/ngo/dashboard"
+        >
+          Manage Request
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>
