@@ -1,0 +1,349 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>DonationPortal</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css"><link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" as="style"><style ng-app-id="ng">
+
+.navbar-container[_ngcontent-ng-c3172052353] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.page-container[_ngcontent-ng-c3172052353] {
+  min-height: calc(100vh - 120px);
+  padding-top: 64px;
+  padding-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .page-container[_ngcontent-ng-c3172052353] {
+    padding-top: 56px;
+  }
+}
+/*# sourceMappingURL=app.component.css.map */</style><style ng-app-id="ng">
+
+.navbar[_ngcontent-ng-c3300586513] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.nav-container[_ngcontent-ng-c3300586513] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.nav-brand[_ngcontent-ng-c3300586513] {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.brand-icon[_ngcontent-ng-c3300586513] {
+  font-size: 1.8rem;
+}
+.brand-text[_ngcontent-ng-c3300586513] {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+.nav-links[_ngcontent-ng-c3300586513] {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+@media (max-width: 768px) {
+  .nav-container[_ngcontent-ng-c3300586513] {
+    padding: 0 0.5rem;
+  }
+  .nav-links[_ngcontent-ng-c3300586513]   button[_ngcontent-ng-c3300586513] {
+    padding: 0 8px;
+    min-width: auto;
+  }
+}
+/*# sourceMappingURL=navbar.component.css.map */</style><style ng-app-id="ng">
+
+[_ngcontent-ng-c1280108064]:root {
+  --clr-deep-navy:#101840;
+  --clr-light-gray:#f2f2f2;
+  --clr-danger:#d14343;
+  --clr-white:#ffffff;
+}
+.section[_ngcontent-ng-c1280108064] {
+  width: max(320px, calc(100% - 2.5rem));
+  margin: auto;
+}
+.footer-container[_ngcontent-ng-c1280108064] {
+  background: var(--clr-deep-navy);
+  padding: 4rem 0;
+}
+.footer[_ngcontent-ng-c1280108064] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  text-align: center;
+}
+.footer[_ngcontent-ng-c1280108064]   h3[_ngcontent-ng-c1280108064] {
+  color: var(--clr-light-gray);
+}
+.footer[_ngcontent-ng-c1280108064]   p[_ngcontent-ng-c1280108064] {
+  color: var(--clr-light-gray);
+  max-width: 720px;
+}
+.social[_ngcontent-ng-c1280108064] {
+  display: flex;
+  gap: 1rem;
+}
+.social[_ngcontent-ng-c1280108064]   a[_ngcontent-ng-c1280108064] {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--clr-light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .4rem;
+}
+.social[_ngcontent-ng-c1280108064]   i[_ngcontent-ng-c1280108064] {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.links[_ngcontent-ng-c1280108064] {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.links[_ngcontent-ng-c1280108064]   a[_ngcontent-ng-c1280108064] {
+  color: var(--clr-danger);
+  font-size: .9rem;
+}
+/*# sourceMappingURL=footer.component.css.map */</style><style ng-app-id="ng">.mat-toolbar{background:var(--mat-toolbar-container-background-color, var(--mat-app-surface));color:var(--mat-toolbar-container-text-color, var(--mat-app-on-surface))}.mat-toolbar,.mat-toolbar h1,.mat-toolbar h2,.mat-toolbar h3,.mat-toolbar h4,.mat-toolbar h5,.mat-toolbar h6{font-family:var(--mat-toolbar-title-text-font, var(--mat-app-title-large-font));font-size:var(--mat-toolbar-title-text-size, var(--mat-app-title-large-size));line-height:var(--mat-toolbar-title-text-line-height, var(--mat-app-title-large-line-height));font-weight:var(--mat-toolbar-title-text-weight, var(--mat-app-title-large-weight));letter-spacing:var(--mat-toolbar-title-text-tracking, var(--mat-app-title-large-tracking));margin:0}.cdk-high-contrast-active .mat-toolbar{outline:solid 1px}.mat-toolbar .mat-form-field-underline,.mat-toolbar .mat-form-field-ripple,.mat-toolbar .mat-focused .mat-form-field-ripple{background-color:currentColor}.mat-toolbar .mat-form-field-label,.mat-toolbar .mat-focused .mat-form-field-label,.mat-toolbar .mat-select-value,.mat-toolbar .mat-select-arrow,.mat-toolbar .mat-form-field.mat-focused .mat-select-arrow{color:inherit}.mat-toolbar .mat-input-element{caret-color:currentColor}.mat-toolbar .mat-mdc-button-base.mat-mdc-button-base.mat-unthemed{--mdc-text-button-label-text-color:var(--mat-toolbar-container-text-color, var(--mat-app-on-surface));--mdc-outlined-button-label-text-color:var(--mat-toolbar-container-text-color, var(--mat-app-on-surface))}.mat-toolbar-row,.mat-toolbar-single-row{display:flex;box-sizing:border-box;padding:0 16px;width:100%;flex-direction:row;align-items:center;white-space:nowrap;height:var(--mat-toolbar-standard-height)}@media(max-width: 599px){.mat-toolbar-row,.mat-toolbar-single-row{height:var(--mat-toolbar-mobile-height)}}.mat-toolbar-multiple-rows{display:flex;box-sizing:border-box;flex-direction:column;width:100%;min-height:var(--mat-toolbar-standard-height)}@media(max-width: 599px){.mat-toolbar-multiple-rows{min-height:var(--mat-toolbar-mobile-height)}}</style><style ng-app-id="ng">mat-icon,mat-icon.mat-primary,mat-icon.mat-accent,mat-icon.mat-warn{color:var(--mat-icon-color)}.mat-icon{-webkit-user-select:none;user-select:none;background-repeat:no-repeat;display:inline-block;fill:currentColor;height:24px;width:24px;overflow:hidden}.mat-icon.mat-icon-inline{font-size:inherit;height:inherit;line-height:inherit;width:inherit}.mat-icon.mat-ligature-font[fontIcon]::before{content:attr(fontIcon)}[dir=rtl] .mat-icon-rtl-mirror{transform:scale(-1, 1)}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon{display:block}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button .mat-icon{margin:auto}</style><style ng-app-id="ng">.mat-mdc-button-base{text-decoration:none}.mdc-button{-webkit-user-select:none;user-select:none;position:relative;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-width:64px;border:none;outline:none;line-height:inherit;-webkit-appearance:none;overflow:visible;vertical-align:middle;background:rgba(0,0,0,0);padding:0 8px}.mdc-button::-moz-focus-inner{padding:0;border:0}.mdc-button:active{outline:none}.mdc-button:hover{cursor:pointer}.mdc-button:disabled{cursor:default;pointer-events:none}.mdc-button[hidden]{display:none}.mdc-button .mdc-button__label{position:relative}.mat-mdc-button{padding:0 var(--mat-text-button-horizontal-padding, 8px);height:var(--mdc-text-button-container-height);font-family:var(--mdc-text-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-text-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-text-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-text-button-label-text-transform);font-weight:var(--mdc-text-button-label-text-weight, var(--mat-app-label-large-weight))}.mat-mdc-button:has(.material-icons,mat-icon,[matButtonIcon]){padding:0 var(--mat-text-button-with-icon-horizontal-padding, 8px)}.mat-mdc-button>.mat-icon{margin-right:var(--mat-text-button-icon-spacing, 8px);margin-left:var(--mat-text-button-icon-offset, 0)}[dir=rtl] .mat-mdc-button>.mat-icon{margin-right:var(--mat-text-button-icon-offset, 0);margin-left:var(--mat-text-button-icon-spacing, 8px)}.mat-mdc-button .mdc-button__label+.mat-icon{margin-right:var(--mat-text-button-icon-offset, 0);margin-left:var(--mat-text-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-button .mdc-button__label+.mat-icon{margin-right:var(--mat-text-button-icon-spacing, 8px);margin-left:var(--mat-text-button-icon-offset, 0)}.mat-mdc-button .mat-ripple-element{background-color:var(--mat-text-button-ripple-color)}.mat-mdc-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-text-button-state-layer-color, var(--mat-app-primary))}.mat-mdc-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-text-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-text-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-text-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-text-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-text-button-touch-target-display)}.mat-mdc-button,.mat-mdc-button .mdc-button__ripple{border-radius:var(--mdc-text-button-container-shape, var(--mat-app-corner-full))}.mat-mdc-button:not(:disabled){color:var(--mdc-text-button-label-text-color, var(--mat-app-primary))}.mat-mdc-button[disabled],.mat-mdc-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-text-button-disabled-label-text-color)}.mat-mdc-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-unelevated-button{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);padding:0 var(--mat-filled-button-horizontal-padding, 16px);height:var(--mdc-filled-button-container-height);font-family:var(--mdc-filled-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-filled-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-filled-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-filled-button-label-text-transform);font-weight:var(--mdc-filled-button-label-text-weight, var(--mat-app-label-large-weight))}.mat-mdc-unelevated-button>.mat-icon{margin-right:var(--mat-filled-button-icon-spacing, 8px);margin-left:var(--mat-filled-button-icon-offset, -4px)}[dir=rtl] .mat-mdc-unelevated-button>.mat-icon{margin-right:var(--mat-filled-button-icon-offset, -4px);margin-left:var(--mat-filled-button-icon-spacing, 8px)}.mat-mdc-unelevated-button .mdc-button__label+.mat-icon{margin-right:var(--mat-filled-button-icon-offset, -4px);margin-left:var(--mat-filled-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-unelevated-button .mdc-button__label+.mat-icon{margin-right:var(--mat-filled-button-icon-spacing, 8px);margin-left:var(--mat-filled-button-icon-offset, -4px)}.mat-mdc-unelevated-button .mat-ripple-element{background-color:var(--mat-filled-button-ripple-color)}.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-filled-button-state-layer-color, var(--mat-app-on-primary))}.mat-mdc-unelevated-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-filled-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-unelevated-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-filled-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-unelevated-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-filled-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-unelevated-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-filled-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-unelevated-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-filled-button-touch-target-display)}.mat-mdc-unelevated-button:not(:disabled){color:var(--mdc-filled-button-label-text-color, var(--mat-app-on-primary));background-color:var(--mdc-filled-button-container-color, var(--mat-app-primary))}.mat-mdc-unelevated-button,.mat-mdc-unelevated-button .mdc-button__ripple{border-radius:var(--mdc-filled-button-container-shape, var(--mat-app-corner-full))}.mat-mdc-unelevated-button[disabled],.mat-mdc-unelevated-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-filled-button-disabled-label-text-color);background-color:var(--mdc-filled-button-disabled-container-color)}.mat-mdc-unelevated-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-raised-button{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);padding:0 var(--mat-protected-button-horizontal-padding, 16px);box-shadow:var(--mdc-protected-button-container-elevation-shadow, var(--mat-app-level1));height:var(--mdc-protected-button-container-height);font-family:var(--mdc-protected-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-protected-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-protected-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-protected-button-label-text-transform);font-weight:var(--mdc-protected-button-label-text-weight, var(--mat-app-label-large-weight))}.mat-mdc-raised-button>.mat-icon{margin-right:var(--mat-protected-button-icon-spacing, 8px);margin-left:var(--mat-protected-button-icon-offset, -4px)}[dir=rtl] .mat-mdc-raised-button>.mat-icon{margin-right:var(--mat-protected-button-icon-offset, -4px);margin-left:var(--mat-protected-button-icon-spacing, 8px)}.mat-mdc-raised-button .mdc-button__label+.mat-icon{margin-right:var(--mat-protected-button-icon-offset, -4px);margin-left:var(--mat-protected-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-raised-button .mdc-button__label+.mat-icon{margin-right:var(--mat-protected-button-icon-spacing, 8px);margin-left:var(--mat-protected-button-icon-offset, -4px)}.mat-mdc-raised-button .mat-ripple-element{background-color:var(--mat-protected-button-ripple-color)}.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-protected-button-state-layer-color, var(--mat-app-primary))}.mat-mdc-raised-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-protected-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-raised-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-protected-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-raised-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-protected-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-raised-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-protected-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-raised-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-protected-button-touch-target-display)}.mat-mdc-raised-button:not(:disabled){color:var(--mdc-protected-button-label-text-color, var(--mat-app-primary));background-color:var(--mdc-protected-button-container-color, var(--mat-app-surface))}.mat-mdc-raised-button,.mat-mdc-raised-button .mdc-button__ripple{border-radius:var(--mdc-protected-button-container-shape, var(--mat-app-corner-full))}.mat-mdc-raised-button:hover{box-shadow:var(--mdc-protected-button-hover-container-elevation-shadow, var(--mat-app-level2))}.mat-mdc-raised-button:focus{box-shadow:var(--mdc-protected-button-focus-container-elevation-shadow, var(--mat-app-level1))}.mat-mdc-raised-button:active,.mat-mdc-raised-button:focus:active{box-shadow:var(--mdc-protected-button-pressed-container-elevation-shadow, var(--mat-app-level1))}.mat-mdc-raised-button[disabled],.mat-mdc-raised-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-protected-button-disabled-label-text-color);background-color:var(--mdc-protected-button-disabled-container-color)}.mat-mdc-raised-button[disabled].mat-mdc-button-disabled,.mat-mdc-raised-button.mat-mdc-button-disabled.mat-mdc-button-disabled{box-shadow:var(--mdc-protected-button-disabled-container-elevation-shadow, var(--mat-app-level0))}.mat-mdc-raised-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-outlined-button{border-style:solid;transition:border 280ms cubic-bezier(0.4, 0, 0.2, 1);padding:0 var(--mat-outlined-button-horizontal-padding, 15px);height:var(--mdc-outlined-button-container-height);font-family:var(--mdc-outlined-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-outlined-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-outlined-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-outlined-button-label-text-transform);font-weight:var(--mdc-outlined-button-label-text-weight, var(--mat-app-label-large-weight));border-radius:var(--mdc-outlined-button-container-shape, var(--mat-app-corner-full));border-width:var(--mdc-outlined-button-outline-width)}.mat-mdc-outlined-button>.mat-icon{margin-right:var(--mat-outlined-button-icon-spacing, 8px);margin-left:var(--mat-outlined-button-icon-offset, -4px)}[dir=rtl] .mat-mdc-outlined-button>.mat-icon{margin-right:var(--mat-outlined-button-icon-offset, -4px);margin-left:var(--mat-outlined-button-icon-spacing, 8px)}.mat-mdc-outlined-button .mdc-button__label+.mat-icon{margin-right:var(--mat-outlined-button-icon-offset, -4px);margin-left:var(--mat-outlined-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-outlined-button .mdc-button__label+.mat-icon{margin-right:var(--mat-outlined-button-icon-spacing, 8px);margin-left:var(--mat-outlined-button-icon-offset, -4px)}.mat-mdc-outlined-button .mat-ripple-element{background-color:var(--mat-outlined-button-ripple-color)}.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-outlined-button-state-layer-color, var(--mat-app-primary))}.mat-mdc-outlined-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-outlined-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-outlined-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-outlined-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-outlined-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-outlined-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-outlined-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-outlined-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-outlined-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-outlined-button-touch-target-display)}.mat-mdc-outlined-button:not(:disabled){color:var(--mdc-outlined-button-label-text-color, var(--mat-app-primary));border-color:var(--mdc-outlined-button-outline-color, var(--mat-app-outline))}.mat-mdc-outlined-button[disabled],.mat-mdc-outlined-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-outlined-button-disabled-label-text-color);border-color:var(--mdc-outlined-button-disabled-outline-color)}.mat-mdc-outlined-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-outlined-button .mdc-button__ripple{border-width:var(--mdc-outlined-button-outline-width);border-style:solid;border-color:rgba(0,0,0,0)}.mat-mdc-button,.mat-mdc-unelevated-button,.mat-mdc-raised-button,.mat-mdc-outlined-button{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-button .mat-mdc-button-ripple,.mat-mdc-button .mat-mdc-button-persistent-ripple,.mat-mdc-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button .mat-mdc-button-ripple,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button .mat-mdc-button-ripple,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-button .mat-mdc-button-ripple,.mat-mdc-unelevated-button .mat-mdc-button-ripple,.mat-mdc-raised-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-button .mdc-button__label,.mat-mdc-button .mat-icon,.mat-mdc-unelevated-button .mdc-button__label,.mat-mdc-unelevated-button .mat-icon,.mat-mdc-raised-button .mdc-button__label,.mat-mdc-raised-button .mat-icon,.mat-mdc-outlined-button .mdc-button__label,.mat-mdc-outlined-button .mat-icon{z-index:1;position:relative}.mat-mdc-button .mat-mdc-focus-indicator,.mat-mdc-unelevated-button .mat-mdc-focus-indicator,.mat-mdc-raised-button .mat-mdc-focus-indicator,.mat-mdc-outlined-button .mat-mdc-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute}.mat-mdc-button:focus .mat-mdc-focus-indicator::before,.mat-mdc-unelevated-button:focus .mat-mdc-focus-indicator::before,.mat-mdc-raised-button:focus .mat-mdc-focus-indicator::before,.mat-mdc-outlined-button:focus .mat-mdc-focus-indicator::before{content:""}.mat-mdc-button._mat-animation-noopable,.mat-mdc-unelevated-button._mat-animation-noopable,.mat-mdc-raised-button._mat-animation-noopable,.mat-mdc-outlined-button._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-button>.mat-icon,.mat-mdc-unelevated-button>.mat-icon,.mat-mdc-raised-button>.mat-icon,.mat-mdc-outlined-button>.mat-icon{display:inline-block;position:relative;vertical-align:top;font-size:1.125rem;height:1.125rem;width:1.125rem}.mat-mdc-outlined-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mdc-button__ripple{top:-1px;left:-1px;bottom:-1px;right:-1px}.mat-mdc-unelevated-button .mat-mdc-focus-indicator::before,.mat-mdc-raised-button .mat-mdc-focus-indicator::before{margin:calc(calc(var(--mat-mdc-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-outlined-button .mat-mdc-focus-indicator::before{margin:calc(calc(var(--mat-mdc-focus-indicator-border-width, 3px) + 3px)*-1)}</style><style ng-app-id="ng">.cdk-high-contrast-active .mat-mdc-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-unelevated-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-raised-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-outlined-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-icon-button{outline:solid 1px}</style><style ng-app-id="ng">
+
+.hero-section[_ngcontent-ng-c1766816423] {
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary-light) 0%,
+      #fce4ec 100%);
+  padding: 80px 0;
+  margin-top: -64px;
+  padding-top: 144px;
+}
+.hero-container[_ngcontent-ng-c1766816423] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.hero-content[_ngcontent-ng-c1766816423]   h1[_ngcontent-ng-c1766816423] {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+.highlight[_ngcontent-ng-c1766816423] {
+  color: var(--primary-color);
+  display: inline-block;
+}
+.hero-content[_ngcontent-ng-c1766816423]   p[_ngcontent-ng-c1766816423] {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+.hero-actions[_ngcontent-ng-c1766816423] {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.hero-image[_ngcontent-ng-c1766816423] {
+  position: relative;
+}
+.hero-image[_ngcontent-ng-c1766816423]   img[_ngcontent-ng-c1766816423] {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-hover);
+}
+.features-section[_ngcontent-ng-c1766816423] {
+  padding: 80px 0;
+  background: var(--surface);
+}
+.features-section[_ngcontent-ng-c1766816423]   h2[_ngcontent-ng-c1766816423] {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: var(--text-primary);
+}
+.features-grid[_ngcontent-ng-c1766816423] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.feature-card[_ngcontent-ng-c1766816423] {
+  text-align: center;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.feature-card[_ngcontent-ng-c1766816423]:hover {
+  transform: translateY(-8px);
+}
+.feature-image[_ngcontent-ng-c1766816423] {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+}
+.feature-icon[_ngcontent-ng-c1766816423] {
+  font-size: 3rem !important;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.feature-card[_ngcontent-ng-c1766816423]   h3[_ngcontent-ng-c1766816423] {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+.feature-card[_ngcontent-ng-c1766816423]   p[_ngcontent-ng-c1766816423] {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.gallery-section[_ngcontent-ng-c1766816423] {
+  padding: 80px 0;
+  background: var(--background);
+}
+.gallery-section[_ngcontent-ng-c1766816423]   h2[_ngcontent-ng-c1766816423] {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: var(--text-primary);
+}
+.gallery-grid[_ngcontent-ng-c1766816423] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.gallery-item[_ngcontent-ng-c1766816423] {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 280px;
+  cursor: pointer;
+}
+.gallery-item[_ngcontent-ng-c1766816423]   img[_ngcontent-ng-c1766816423] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.gallery-item[_ngcontent-ng-c1766816423]:hover   img[_ngcontent-ng-c1766816423] {
+  transform: scale(1.05);
+}
+.overlay[_ngcontent-ng-c1766816423] {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  padding: 2rem 1.5rem 1.5rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+.gallery-item[_ngcontent-ng-c1766816423]:hover   .overlay[_ngcontent-ng-c1766816423] {
+  transform: translateY(0);
+}
+.overlay[_ngcontent-ng-c1766816423]   h4[_ngcontent-ng-c1766816423] {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.stats-section[_ngcontent-ng-c1766816423] {
+  background: var(--primary-color);
+  color: white;
+  padding: 60px 0;
+}
+.stats-grid[_ngcontent-ng-c1766816423] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+.stat-item[_ngcontent-ng-c1766816423]   mat-icon[_ngcontent-ng-c1766816423] {
+  font-size: 3rem !important;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+.stat-item[_ngcontent-ng-c1766816423]   h3[_ngcontent-ng-c1766816423] {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.stat-item[_ngcontent-ng-c1766816423]   p[_ngcontent-ng-c1766816423] {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+@media (max-width: 768px) {
+  .hero-container[_ngcontent-ng-c1766816423] {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .hero-actions[_ngcontent-ng-c1766816423] {
+    justify-content: center;
+  }
+  .features-grid[_ngcontent-ng-c1766816423], 
+   .gallery-grid[_ngcontent-ng-c1766816423], 
+   .stats-grid[_ngcontent-ng-c1766816423] {
+    padding: 0 1rem;
+  }
+}
+/*# sourceMappingURL=home.component.css.map */</style><style ng-app-id="ng">.mat-mdc-card{display:flex;flex-direction:column;box-sizing:border-box;position:relative;border-style:solid;border-width:0;background-color:var(--mdc-elevated-card-container-color, var(--mat-app-surface-container-low));border-color:var(--mdc-elevated-card-container-color, var(--mat-app-surface-container-low));border-radius:var(--mdc-elevated-card-container-shape, var(--mat-app-corner-medium));box-shadow:var(--mdc-elevated-card-container-elevation, var(--mat-app-level1))}.mat-mdc-card::after{position:absolute;top:0;left:0;width:100%;height:100%;border:solid 1px rgba(0,0,0,0);content:"";display:block;pointer-events:none;box-sizing:border-box;border-radius:var(--mdc-elevated-card-container-shape, var(--mat-app-corner-medium))}.mat-mdc-card-outlined{background-color:var(--mdc-outlined-card-container-color, var(--mat-app-surface));border-radius:var(--mdc-outlined-card-container-shape, var(--mat-app-corner-medium));border-width:var(--mdc-outlined-card-outline-width);border-color:var(--mdc-outlined-card-outline-color, var(--mat-app-outline-variant));box-shadow:var(--mdc-outlined-card-container-elevation, var(--mat-app-level0))}.mat-mdc-card-outlined::after{border:none}.mdc-card__media{position:relative;box-sizing:border-box;background-repeat:no-repeat;background-position:center;background-size:cover}.mdc-card__media::before{display:block;content:""}.mdc-card__media:first-child{border-top-left-radius:inherit;border-top-right-radius:inherit}.mdc-card__media:last-child{border-bottom-left-radius:inherit;border-bottom-right-radius:inherit}.mat-mdc-card-actions{display:flex;flex-direction:row;align-items:center;box-sizing:border-box;min-height:52px;padding:8px}.mat-mdc-card-title{font-family:var(--mat-card-title-text-font, var(--mat-app-title-large-font));line-height:var(--mat-card-title-text-line-height, var(--mat-app-title-large-line-height));font-size:var(--mat-card-title-text-size, var(--mat-app-title-large-size));letter-spacing:var(--mat-card-title-text-tracking, var(--mat-app-title-large-tracking));font-weight:var(--mat-card-title-text-weight, var(--mat-app-title-large-weight))}.mat-mdc-card-subtitle{color:var(--mat-card-subtitle-text-color, var(--mat-app-on-surface));font-family:var(--mat-card-subtitle-text-font, var(--mat-app-title-medium-font));line-height:var(--mat-card-subtitle-text-line-height, var(--mat-app-title-medium-line-height));font-size:var(--mat-card-subtitle-text-size, var(--mat-app-title-medium-size));letter-spacing:var(--mat-card-subtitle-text-tracking, var(--mat-app-title-medium-tracking));font-weight:var(--mat-card-subtitle-text-weight, var(--mat-app-title-medium-weight))}.mat-mdc-card-title,.mat-mdc-card-subtitle{display:block;margin:0}.mat-mdc-card-avatar~.mat-mdc-card-header-text .mat-mdc-card-title,.mat-mdc-card-avatar~.mat-mdc-card-header-text .mat-mdc-card-subtitle{padding:16px 16px 0}.mat-mdc-card-header{display:flex;padding:16px 16px 0}.mat-mdc-card-content{display:block;padding:0 16px}.mat-mdc-card-content:first-child{padding-top:16px}.mat-mdc-card-content:last-child{padding-bottom:16px}.mat-mdc-card-title-group{display:flex;justify-content:space-between;width:100%}.mat-mdc-card-avatar{height:40px;width:40px;border-radius:50%;flex-shrink:0;margin-bottom:16px;object-fit:cover}.mat-mdc-card-avatar~.mat-mdc-card-header-text .mat-mdc-card-subtitle,.mat-mdc-card-avatar~.mat-mdc-card-header-text .mat-mdc-card-title{line-height:normal}.mat-mdc-card-sm-image{width:80px;height:80px}.mat-mdc-card-md-image{width:112px;height:112px}.mat-mdc-card-lg-image{width:152px;height:152px}.mat-mdc-card-xl-image{width:240px;height:240px}.mat-mdc-card-subtitle~.mat-mdc-card-title,.mat-mdc-card-title~.mat-mdc-card-subtitle,.mat-mdc-card-header .mat-mdc-card-header-text .mat-mdc-card-title,.mat-mdc-card-header .mat-mdc-card-header-text .mat-mdc-card-subtitle,.mat-mdc-card-title-group .mat-mdc-card-title,.mat-mdc-card-title-group .mat-mdc-card-subtitle{padding-top:0}.mat-mdc-card-content>:last-child:not(.mat-mdc-card-footer){margin-bottom:0}.mat-mdc-card-actions-align-end{justify-content:flex-end}</style></head>
+<body class="mat-typography">
+  <app-root _nghost-ng-c3172052353="" ng-version="18.2.14" ng-server-context="ssg"><div _ngcontent-ng-c3172052353="" class="navbar-container"><app-navbar _ngcontent-ng-c3172052353="" _nghost-ng-c3300586513=""><mat-toolbar _ngcontent-ng-c3300586513="" color="primary" class="mat-toolbar navbar mat-primary mat-toolbar-single-row" ng-reflect-color="primary"><div _ngcontent-ng-c3300586513="" class="nav-container"><div _ngcontent-ng-c3300586513="" class="nav-brand"><mat-icon _ngcontent-ng-c3300586513="" role="img" class="mat-icon notranslate brand-icon material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">volunteer_activism</mat-icon><span _ngcontent-ng-c3300586513="" routerlink="/home" class="brand-text" tabindex="0" ng-reflect-router-link="/home">DonateHub</span></div><div _ngcontent-ng-c3300586513="" class="nav-links"><button _ngcontent-ng-c3300586513="" mat-button="" routerlink="/home" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" class="mdc-button mat-mdc-button _mat-animation-noopable mat-unthemed mat-mdc-button-base" tabindex="0" ng-reflect-router-link="/home"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Home</span><span class="mat-mdc-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><button _ngcontent-ng-c3300586513="" mat-button="" routerlink="/donations" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" class="mdc-button mat-mdc-button _mat-animation-noopable mat-unthemed mat-mdc-button-base" tabindex="0" ng-reflect-router-link="/donations"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Donations</span><span class="mat-mdc-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><button _ngcontent-ng-c3300586513="" mat-button="" routerlink="/login" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" class="mdc-button mat-mdc-button _mat-animation-noopable mat-unthemed mat-mdc-button-base" tabindex="0" ng-reflect-router-link="/login"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Login</span><span class="mat-mdc-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><button _ngcontent-ng-c3300586513="" mat-raised-button="" routerlink="/signup" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" class="mdc-button mdc-button--raised mat-mdc-raised-button _mat-animation-noopable mat-unthemed mat-mdc-button-base" tabindex="0" ng-reflect-router-link="/signup"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">Sign Up</span><span class="mat-mdc-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></div><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></mat-toolbar></app-navbar></div><main _ngcontent-ng-c3172052353="" class="page-container"><router-outlet _ngcontent-ng-c3172052353=""></router-outlet><app-home _nghost-ng-c1766816423=""><div _ngcontent-ng-c1766816423="" class="hero-section"><div _ngcontent-ng-c1766816423="" class="hero-container"><div _ngcontent-ng-c1766816423="" class="hero-content"><h1 _ngcontent-ng-c1766816423="">Connect Hearts, <span _ngcontent-ng-c1766816423="" class="highlight">Change Lives</span></h1><p _ngcontent-ng-c1766816423="">Join our platform to make meaningful donations and support verified NGOs in your community</p><div _ngcontent-ng-c1766816423="" class="hero-actions"><button _ngcontent-ng-c1766816423="" mat-raised-button="" color="primary" routerlink="/donations" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" class="mdc-button mdc-button--raised mat-mdc-raised-button mat-primary _mat-animation-noopable mat-mdc-button-base" ng-reflect-color="primary" tabindex="0" ng-reflect-router-link="/donations"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c1766816423="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">volunteer_activism</mat-icon><span class="mdc-button__label"> Start Donating </span><span class="mat-mdc-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><button _ngcontent-ng-c1766816423="" mat-raised-button="" color="accent" routerlink="/signup" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" class="mdc-button mdc-button--raised mat-mdc-raised-button mat-accent _mat-animation-noopable mat-mdc-button-base" ng-reflect-color="accent" tabindex="0" ng-reflect-router-link="/signup"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c1766816423="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">person_add</mat-icon><span class="mdc-button__label"> Join as NGO </span><span class="mat-mdc-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></div></div><div _ngcontent-ng-c1766816423="" class="hero-image"><img _ngcontent-ng-c1766816423="" src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&amp;h=400&amp;fit=crop" alt="Donation"></div></div></div><div _ngcontent-ng-c1766816423="" class="features-section"><div _ngcontent-ng-c1766816423="" class="container"><h2 _ngcontent-ng-c1766816423="">How It Works</h2><div _ngcontent-ng-c1766816423="" class="features-grid"><mat-card _ngcontent-ng-c1766816423="" class="mat-mdc-card mdc-card feature-card"><img _ngcontent-ng-c1766816423="" alt="feature" class="feature-image" src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=300&amp;h=200&amp;fit=crop"><mat-card-content _ngcontent-ng-c1766816423="" class="mat-mdc-card-content"><mat-icon _ngcontent-ng-c1766816423="" role="img" class="mat-icon notranslate feature-icon material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">search</mat-icon><h3 _ngcontent-ng-c1766816423="">Browse Requests</h3><p _ngcontent-ng-c1766816423="">Find donation requests from verified NGOs in your area</p></mat-card-content></mat-card><mat-card _ngcontent-ng-c1766816423="" class="mat-mdc-card mdc-card feature-card"><img _ngcontent-ng-c1766816423="" alt="feature" class="feature-image" src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=300&amp;h=200&amp;fit=crop"><mat-card-content _ngcontent-ng-c1766816423="" class="mat-mdc-card-content"><mat-icon _ngcontent-ng-c1766816423="" role="img" class="mat-icon notranslate feature-icon material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">favorite</mat-icon><h3 _ngcontent-ng-c1766816423="">Make Impact</h3><p _ngcontent-ng-c1766816423="">Contribute food, funds, clothes or other essentials</p></mat-card-content></mat-card><mat-card _ngcontent-ng-c1766816423="" class="mat-mdc-card mdc-card feature-card"><img _ngcontent-ng-c1766816423="" alt="feature" class="feature-image" src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=300&amp;h=200&amp;fit=crop"><mat-card-content _ngcontent-ng-c1766816423="" class="mat-mdc-card-content"><mat-icon _ngcontent-ng-c1766816423="" role="img" class="mat-icon notranslate feature-icon material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">schedule</mat-icon><h3 _ngcontent-ng-c1766816423="">Schedule Pickup</h3><p _ngcontent-ng-c1766816423="">Arrange convenient pickup times for your donations</p></mat-card-content></mat-card><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></div></div><div _ngcontent-ng-c1766816423="" class="gallery-section"><div _ngcontent-ng-c1766816423="" class="container"><h2 _ngcontent-ng-c1766816423="">Making a Difference</h2><div _ngcontent-ng-c1766816423="" class="gallery-grid"><div _ngcontent-ng-c1766816423="" class="gallery-item"><img _ngcontent-ng-c1766816423="" src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&amp;h=300&amp;fit=crop" alt="Food donation"><div _ngcontent-ng-c1766816423="" class="overlay"><h4 _ngcontent-ng-c1766816423="">Food Distribution</h4><p _ngcontent-ng-c1766816423="">Providing meals to families in need</p></div></div><div _ngcontent-ng-c1766816423="" class="gallery-item"><img _ngcontent-ng-c1766816423="" src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&amp;h=300&amp;fit=crop" alt="Clothing donation"><div _ngcontent-ng-c1766816423="" class="overlay"><h4 _ngcontent-ng-c1766816423="">Clothing Drive</h4><p _ngcontent-ng-c1766816423="">Warm clothes for winter season</p></div></div><div _ngcontent-ng-c1766816423="" class="gallery-item"><img _ngcontent-ng-c1766816423="" src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&amp;h=300&amp;fit=crop" alt="Community help"><div _ngcontent-ng-c1766816423="" class="overlay"><h4 _ngcontent-ng-c1766816423="">Community Support</h4><p _ngcontent-ng-c1766816423="">Building stronger communities together</p></div></div><div _ngcontent-ng-c1766816423="" class="gallery-item"><img _ngcontent-ng-c1766816423="" src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=400&amp;h=300&amp;fit=crop" alt="Education support"><div _ngcontent-ng-c1766816423="" class="overlay"><h4 _ngcontent-ng-c1766816423="">Education Aid</h4><p _ngcontent-ng-c1766816423="">Supporting children's education</p></div></div><div _ngcontent-ng-c1766816423="" class="gallery-item"><img _ngcontent-ng-c1766816423="" src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=400&amp;h=300&amp;fit=crop" alt="Medical aid"><div _ngcontent-ng-c1766816423="" class="overlay"><h4 _ngcontent-ng-c1766816423="">Medical Support</h4><p _ngcontent-ng-c1766816423="">Healthcare assistance for all</p></div></div><div _ngcontent-ng-c1766816423="" class="gallery-item"><img _ngcontent-ng-c1766816423="" src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=400&amp;h=300&amp;fit=crop" alt="Volunteer work"><div _ngcontent-ng-c1766816423="" class="overlay"><h4 _ngcontent-ng-c1766816423="">Volunteer Network</h4><p _ngcontent-ng-c1766816423="">Join our volunteer community</p></div></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></div></div><div _ngcontent-ng-c1766816423="" class="stats-section"><div _ngcontent-ng-c1766816423="" class="container"><div _ngcontent-ng-c1766816423="" class="stats-grid"><div _ngcontent-ng-c1766816423="" class="stat-item"><mat-icon _ngcontent-ng-c1766816423="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">people</mat-icon><h3 _ngcontent-ng-c1766816423="">500+</h3><p _ngcontent-ng-c1766816423="">Active Donors</p></div><div _ngcontent-ng-c1766816423="" class="stat-item"><mat-icon _ngcontent-ng-c1766816423="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">business</mat-icon><h3 _ngcontent-ng-c1766816423="">50+</h3><p _ngcontent-ng-c1766816423="">Verified NGOs</p></div><div _ngcontent-ng-c1766816423="" class="stat-item"><mat-icon _ngcontent-ng-c1766816423="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">favorite</mat-icon><h3 _ngcontent-ng-c1766816423="">1000+</h3><p _ngcontent-ng-c1766816423="">Lives Impacted</p></div><div _ngcontent-ng-c1766816423="" class="stat-item"><mat-icon _ngcontent-ng-c1766816423="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">volunteer_activism</mat-icon><h3 _ngcontent-ng-c1766816423="">2500+</h3><p _ngcontent-ng-c1766816423="">Donations Made</p></div></div></div></div></app-home><!--container--></main><app-footer _ngcontent-ng-c3172052353="" _nghost-ng-c1280108064=""><footer _ngcontent-ng-c1280108064="" class="footer-container"><div _ngcontent-ng-c1280108064="" class="footer section"><h3 _ngcontent-ng-c1280108064="">Donation &amp; Charity Platform</h3><p _ngcontent-ng-c1280108064=""> A secure platform connecting donors with verified NGOs — enabling transparent, trackable and meaningful contributions. </p><div _ngcontent-ng-c1280108064="" class="social"><a _ngcontent-ng-c1280108064="" href="javascript:void(0)"><i _ngcontent-ng-c1280108064="" class="ri-facebook-line"></i></a><a _ngcontent-ng-c1280108064="" href="javascript:void(0)"><i _ngcontent-ng-c1280108064="" class="ri-twitter-line"></i></a><a _ngcontent-ng-c1280108064="" href="javascript:void(0)"><i _ngcontent-ng-c1280108064="" class="ri-instagram-line"></i></a><a _ngcontent-ng-c1280108064="" href="javascript:void(0)"><i _ngcontent-ng-c1280108064="" class="ri-youtube-line"></i></a></div><ul _ngcontent-ng-c1280108064="" class="links"><li _ngcontent-ng-c1280108064=""><a _ngcontent-ng-c1280108064="" routerlink="/privacy" ng-reflect-router-link="/privacy" href="/privacy">privacy policy</a></li><li _ngcontent-ng-c1280108064=""><a _ngcontent-ng-c1280108064="" routerlink="/terms" ng-reflect-router-link="/terms" href="/terms">terms &amp; conditions</a></li><li _ngcontent-ng-c1280108064=""><a _ngcontent-ng-c1280108064="" routerlink="/about" ng-reflect-router-link="/about" href="/about">about us</a></li><li _ngcontent-ng-c1280108064=""><a _ngcontent-ng-c1280108064="" routerlink="/contact" ng-reflect-router-link="/contact" href="/contact">contact us</a></li></ul></div></footer></app-footer></app-root>
+<link rel="modulepreload" href="chunk-6TANUQLP.js"><link rel="modulepreload" href="chunk-ANGXZAIU.js"><link rel="modulepreload" href="chunk-X6PBHBYZ.js"><link rel="modulepreload" href="chunk-7VBQQGLQ.js"><link rel="modulepreload" href="chunk-QC73AF7C.js"><link rel="modulepreload" href="chunk-XKDQ4MI2.js"><link rel="modulepreload" href="chunk-6AVK7434.js"><link rel="modulepreload" href="chunk-WULQVJ4Y.js"><link rel="modulepreload" href="chunk-T3FPL6CQ.js"><script src="polyfills.js" type="module"></script><script src="main.js" type="module"></script>
+
+
+</body></html>

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/app.component.css"],
+  "sourcesContent": [".navbar-container {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  z-index: 1000;\n}\n\n.page-container {\n  min-height: calc(100vh - 120px);\n  padding-top: 64px;\n  padding-bottom: 2rem;\n}\n\n@media (max-width: 768px) {\n  .page-container {\n    padding-top: 56px;\n  }\n}"],
+  "mappings": ";AAAA,CAAC;AACC,YAAU;AACV,OAAK;AACL,QAAM;AACN,SAAO;AACP,WAAS;AACX;AAEA,CAAC;AACC,cAAY,KAAK,MAAM,EAAE;AACzB,eAAa;AACb,kBAAgB;AAClB;AAEA,OAAO,CAAC,SAAS,EAAE;AACjB,GAPD;AAQG,iBAAa;AACf;AACF;",
+  "names": []
+}
